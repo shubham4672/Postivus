@@ -1,9 +1,14 @@
 <div class="service-card">
   <div class="service-left">
-    <h4>{{title()}}</h4>
-    <p>Learn more</p>
+    <div class="service-heading">
+      <h4>{{ service()?.t1 }}</h4>
+      <h4>{{ service()?.t2 }}</h4>
+    </div>
+    <div class="service-icon">
+      <p class="service-in">Learn more</p>
+    </div>
   </div>
   <div class="image">
-    <img src="" alt="" />
+    <img [src]="service()?.image" [alt]="service()?.alt" />
   </div>
 </div>

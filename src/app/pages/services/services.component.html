@@ -2,14 +2,26 @@
   <div class="container">
     <div class="services">
       <div class="service-bar">
-        <h3>Services</h3>
+        <div class="service-heading">
+          <h3>Services</h3>
+        </div>
         <p>
           At our digital marketing agency, we offer a range of services to help
           businesses grow and succeed online. These services include:
         </p>
       </div>
       <div class="service-info">
-        
+        @for (service of services; track service.id; let i = $index) {
+          <app-service-bar
+            [service]="service"
+            [class]="{
+              tertiary: i % 3 === 0,
+              secondary: i % 3 === 1,
+              primary: i % 3 === 2,
+              invert: i % 3 === 2
+            }"
+          />
+        }
       </div>
     </div>
   </div>

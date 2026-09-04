@@ -1,4 +1,5 @@
 import { Component, inject, input } from '@angular/core';
+import { Service } from '../../modals/services.modal';
 
 @Component({
   selector: 'app-service-bar',
@@ -7,5 +8,5 @@ import { Component, inject, input } from '@angular/core';
   styleUrl: './service-bar.component.scss',
 })
 export class ServiceBarComponent {
-  title = input<String>();
+  service = input<Service>();
 }

@@ -1,7 +1,57 @@
+@use 'typography';
+
+:host {
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    color: var(--primary-black);
+  }
+  &.tertiary .service-card {
+    background-color: var(--tertiary-grey);
+  }
+  &.secondary .service-card {
+    background-color: var(--secondary-green);
+  }
+  &.primary .service-card {
+    background-color: var(--primary-black);
+    color: var(--text-white);
+  }
+}
+
+.service-card {
+  width: 600px;
+  height: 310px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid var(--primary-black);
+  border-radius: 45px;
+  box-shadow: 0 10px 0px -5px;
+}
+
+.service-left {
+  display: flex;
+  flex-direction: column;
+  gap: 93px;
+}
+
+.service-heading {
+  h4 {
+    @include typography.font-medium;
+  }
+}
+
+.service-in {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 p::before {
-    content: "";
-    width: 41px;
-    height: 41px;
-    background: url('/images/Arrow.png') no-repeat center;
-    background-size: contain;
+  display: inline-block;
+  content: "";
+  width: 41px;
+  height: 41px;
+  background: url("/images/Arrow.png") no-repeat center;
+  background-size: contain;
 }
