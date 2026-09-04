@@ -16,6 +16,35 @@
     background-color: var(--primary-black);
     color: var(--text-white);
   }
+
+  &.bggreen .service-card {
+    h4, span {
+      background-color: var(--secondary-green);
+      padding: 0 7px;
+      border-radius: 7px;
+    }
+  }
+
+  &.bggrey .service-card {
+    h4, span {
+      background-color: var(--tertiary-grey);
+      padding: 0 7px;
+      border-radius: 7px;
+    }
+  }
+
+  &.bgwhite .service-card {
+    h4, span {
+      background-color: var(--text-white);
+      color: var(--primary-black);
+      padding: 0 7px;
+      border-radius: 7px;
+    }
+  }
+
+  &.invert .service-icon svg {
+    fill: var(--text-white);
+  }
 }
 
 .service-card {
@@ -36,22 +65,18 @@
 }
 
 .service-heading {
-  h4 {
+  h4, span {
     @include typography.font-medium;
   }
 }
 
-.service-in {
+.service-icon {
   display: flex;
-  align-items: center;
   gap: 15px;
-}
-
-p::before {
-  display: inline-block;
-  content: "";
-  width: 41px;
-  height: 41px;
-  background: url("/images/Arrow.png") no-repeat center;
-  background-size: contain;
+  align-items: center;
+  svg {
+    width: 41px;
+    height: 41px;
+    transform: rotate(-45deg);
+  }
 }

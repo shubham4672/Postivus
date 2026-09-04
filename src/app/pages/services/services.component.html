@@ -16,8 +16,11 @@
             [service]="service"
             [class]="{
               tertiary: i % 3 === 0,
+              bggreen: i % 3 === 0,
               secondary: i % 3 === 1,
+              bggrey: i % 3 === 1,
               primary: i % 3 === 2,
+              bgwhite: i % 3 === 2,
               invert: i % 3 === 2
             }"
           />
