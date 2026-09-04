@@ -23,7 +23,7 @@
   }
 
   p {
-    @include typography.font-small;
+    @include typography.font-smaller;
   }
 
   button {
@@ -31,7 +31,7 @@
     background: var(--primary-black);
     color: var(--tertiary-grey);
     border-radius: 14px;
-    @include typography.font-small;
+    @include typography.font-smaller;
   }
 }
 

@@ -31,7 +31,7 @@ nav {
   list-style: none;
 
   li {
-    @include typography.font-small;
+    @include typography.font-smaller;
     cursor: pointer;
     &:hover {
       text-decoration: underline;

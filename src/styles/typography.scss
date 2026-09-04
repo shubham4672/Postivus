@@ -1,10 +1,15 @@
-@mixin font-smaller {
+@mixin font-smallest {
   font-size: 18px;
   font-weight: 400;
 }
 
-@mixin font-small {
+@mixin font-smaller {
   font-size: 20px;
+  font-weight: 400;
+}
+
+@mixin font-small {
+  font-size: 30px;
   font-weight: 400;
 }
 
