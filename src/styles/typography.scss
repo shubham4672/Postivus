@@ -1,0 +1,14 @@
+@mixin font-small {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@mixin font-regular {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+@mixin font-medium {
+  font-size: 60px;
+  font-weight: 500;
+}

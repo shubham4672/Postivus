@@ -1,0 +1,7 @@
+p::before {
+    content: "";
+    width: 41px;
+    height: 41px;
+    background: url('/images/Arrow.png') no-repeat center;
+    background-size: contain;
+}

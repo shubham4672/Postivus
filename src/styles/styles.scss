@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --secondary-green: #b9ff66;
+  --primary-black: #191a23;
+  --tertiary-grey: #f3f3f3;
+  --text-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  height: 100%;
+  color: var(--primary-black);
+}
+
+.container {
+  margin: 0 auto;
+  width: 1240px;
+  padding: 0 20px;
+}

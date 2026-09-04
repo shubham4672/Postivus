@@ -1,0 +1,24 @@
+<section>
+  <div class="container">
+    <div class="home">
+      <div class="home-left">
+        <h2>Navigating the digital landscape for success</h2>
+        <p>
+          Our digital marketing agency helps businesses grow and succeed online
+          through a range of services including SEO, PPC, social media
+          marketing, and content creation.
+        </p>
+        <app-button content="Book a consultation" mode="dark" />
+      </div>
+      <div class="home-right">
+        <img src="/images/Illustration.png" alt="main-image" />
+      </div>
+    </div>
+    <div class="companies">
+      @for (image of images; track image.id) {
+        <app-company [source]="image.path" />
+      }
+    </div>
+    
+  </div>
+</section>

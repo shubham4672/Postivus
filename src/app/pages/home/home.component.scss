@@ -1,0 +1,41 @@
+@use "typography";
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px auto;
+}
+
+.home-left {
+  padding: 0px;
+  width: 531px;
+  height: 481px;
+
+  h2,
+  p {
+    margin-bottom: 35px;
+  }
+
+  h2 {
+    font-size: 60px;
+    font-weight: 500;
+  }
+
+  p {
+    @include typography.font-small;
+  }
+
+  button {
+    padding: 20px 35px;
+    background: var(--primary-black);
+    color: var(--tertiary-grey);
+    border-radius: 14px;
+    @include typography.font-small;
+  }
+}
+
+.companies {
+  display: flex;
+  justify-content: space-between;
+}
