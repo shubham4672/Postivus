@@ -1,0 +1,32 @@
+[
+    {
+      "title": "John Smith",
+      "designation": "CEO and Founder",
+      "description": "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy."
+    },
+    {
+      "title": "Jane Doe",
+      "designation": "Director of Operations",
+      "description": "7+ years of experience in project management and team leadership. Strong organizational and communication skills."
+    },
+    {
+      "title": "Michael Brown",
+      "designation": "Senior SEO Specialist",
+      "description": "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization."
+    },
+    {
+      "title": "Emily Johnson",
+      "designation": "PPC Manager",
+      "description": "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis."
+    },
+    {
+      "title": "Brian Williams",
+      "designation": "Social Media Specialist",
+      "description": "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement."
+    },
+    {
+      "title": "Sarah Kim",
+      "designation": "Content Creator",
+      "description": "2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries."
+    }
+  ]
