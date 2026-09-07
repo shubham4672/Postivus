@@ -1,0 +1,10 @@
+.services {
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+.service-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}

@@ -1,0 +1,86 @@
+@use 'typography';
+
+:host {
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    color: var(--primary-black);
+  }
+  &.tertiary .service-card {
+    background-color: var(--tertiary-grey);
+  }
+  &.secondary .service-card {
+    background-color: var(--secondary-green);
+  }
+  &.primary .service-card {
+    background-color: var(--primary-black);
+    color: var(--text-white);
+  }
+
+  &.bggreen .service-card {
+    span {
+      background-color: var(--secondary-green);
+      padding: 0 7px;
+      border-radius: 7px;
+    }
+  }
+
+  &.bggrey .service-card {
+    span {
+      background-color: var(--tertiary-grey);
+      padding: 0 7px;
+      border-radius: 7px;
+    }
+  }
+
+  &.bgwhite .service-card {
+    span {
+      background-color: var(--text-white);
+      color: var(--primary-black);
+      padding: 0 7px;
+      border-radius: 7px;
+    }
+  }
+
+  &.invert .service-icon svg {
+    fill: var(--text-white);
+  }
+}
+
+.service-card {
+  width: 600px;
+  height: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--primary-black);
+  border-radius: 45px;
+  box-shadow: 0 10px 0px -5px;
+  padding: 50px;
+}
+
+.service-left {
+  display: flex;
+  flex-direction: column;
+  gap: 93px;
+}
+
+.service-heading {
+  display: flex;
+  flex-direction: column;
+  span {
+    width: fit-content;
+    @include typography.font-small;
+  }
+}
+
+.service-icon {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  svg {
+    width: 41px;
+    height: 41px;
+    transform: rotate(-45deg);
+  }
+}

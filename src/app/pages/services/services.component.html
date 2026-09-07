@@ -1,0 +1,27 @@
+<section>
+  <div class="container services">
+    <!-- <div class="services"> -->
+    <app-heading
+      heading="Services"
+      description="At our digital marketing agency, we offer a range of services to help
+    businesses grow and succeed online. These services include:"
+    />
+    <div class="service-info">
+      @for (service of services; track service.id; let i = $index) {
+        <app-service-bar
+          [service]="service"
+          [class]="{
+            tertiary: i % 3 === 0,
+            bggreen: i % 3 === 0,
+            secondary: i % 3 === 1,
+            bggrey: i % 3 === 1,
+            primary: i % 3 === 2,
+            bgwhite: i % 3 === 2,
+            invert: i % 3 === 2,
+          }"
+        />
+      }
+    </div>
+    <!-- </div> -->
+  </div>
+</section>

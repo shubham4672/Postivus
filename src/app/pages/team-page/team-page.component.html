@@ -1,0 +1,14 @@
+<section>
+  <div class="container">
+    <app-heading
+      heading="Team"
+      description="Meet the skilled and experienced team behind our successful digital marketing strategies"
+    />
+    <div class="team-members">
+      @for (team of teams; track team.id) {
+        <app-team-card [member]="team" />
+      }
+    </div>
+    <app-button content="See all team" mode="dark" class="team-btn" />
+  </div>
+</section>

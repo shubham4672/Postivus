@@ -1,0 +1,40 @@
+@use 'typography';
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  width: 219.54px;
+  height: 56px;
+  padding: 10px 0;
+  gap: 12.92px;
+
+  img {
+    width: 36px;
+    height: 36px;
+  }
+
+  h1 {
+    @include typography.font-regular;
+  }
+}
+
+.nav-right ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+
+  li {
+    @include typography.font-smaller;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }    
+  }
+}

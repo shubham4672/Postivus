@@ -1,0 +1,23 @@
+@use "typography";
+
+.heading-bar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 80px;
+
+  .heading {
+    background-color: var(--secondary-green);
+    border-radius: 7px;
+    padding: 0 7px;
+    h3 {
+      @include typography.font-regular;
+      text-align: center;
+    }
+  }
+
+  p {
+    width: 580px;
+    @include typography.font-smallest;
+  }
+}

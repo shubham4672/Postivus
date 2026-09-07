@@ -1,0 +1,38 @@
+@use "typography";
+
+.card {
+  width: 387px;
+  min-height: 357px;
+  border: 1px solid var(--primary-black);
+  border-radius: 45px;
+  padding: 40px 35px;
+  box-shadow: 0 10px 0px -5px;
+
+  .card-top {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    h5 {
+      @include typography.font-smaller;
+    }
+  }
+}
+
+.social-icon {
+  position: relative;
+  svg {
+    position: absolute;
+    right: 0;
+  }
+}
+
+p {
+  @include typography.font-smallest;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-black);
+    margin: 28px 0;
+}

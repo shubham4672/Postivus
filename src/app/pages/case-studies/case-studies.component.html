@@ -1,0 +1,13 @@
+<section>
+  <div class="container">
+    <app-heading
+      heading="Case Studies"
+      description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+    />
+    <div class="key-performances">
+      @for (detail of details; track detail.id) {
+        <app-key-performance [detail]="detail.info" />
+      }
+    </div>
+  </div>
+</section>

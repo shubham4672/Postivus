@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "t1": "Search engine",
+    "t2": "optimization",
+    "image": "/images/illustrations/Illustration (1).png",
+    "alt": "Creative digital illustration for modern services"
+  },
+  {
+    "id": 2,
+    "t1": "Pay-per-click",
+    "t2": "advertising",
+    "image": "/images/illustrations/Illustration (2).png",
+    "alt": "Professional illustration representing innovative solutions"
+  },
+  {
+    "id": 3,
+    "t1": "Social Media",
+    "t2": "Marketing",
+    "image": "/images/illustrations/Illustration (3).png",
+    "alt": "Modern graphic illustration for business services"
+  },
+  {
+    "id": 4,
+    "t1": "Email",
+    "t2": "Marketing",
+    "image": "/images/illustrations/Illustration (4).png",
+    "alt": "Colorful digital artwork representing creative solutions"
+  },
+  {
+    "id": 5,
+    "t1": "Content",
+    "t2": "Creation",
+    "image": "/images/illustrations/Illustration (5).png",
+    "alt": "Contemporary illustration showcasing digital expertise"
+  },
+  {
+    "id": 6,
+    "t1": "Analytics and",
+    "t2": "Tracking",
+    "image": "/images/illustrations/Illustration (6).png",
+    "alt": "Contemporary illustration showcasing digital"
+  }
+]

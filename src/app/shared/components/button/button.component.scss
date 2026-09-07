@@ -1,0 +1,20 @@
+@use "typography";
+
+button {
+  @include typography.font-smaller;
+  padding: 20px 35px;
+  border-radius: 14px;
+  border: 0.7px solid var(--primary-black);
+  cursor: pointer;
+  &.dark {
+    background: var(--primary-black);
+    color: var(--tertiary-grey);
+  }
+  &.light {
+    background: var(--text-white);
+
+    &:hover {
+      background: var(--tertiary-grey);
+    }
+  }
+}

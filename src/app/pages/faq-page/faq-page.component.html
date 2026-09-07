@@ -1,0 +1,13 @@
+<section>
+  <div class="container">
+    <app-heading
+      heading="Our Working Process "
+      description="Step-by-Step Guide to Achieving Your Business Goals"
+    />
+    <div class="accordian-section">
+      @for (faq of faqs; track faq.id; let i = $index) {
+        <app-faq-tab [faq]="faq" [isActive]="i == 0" [class.active]="i==0" />
+      }
+    </div>
+  </div>
+</section>
