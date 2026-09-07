@@ -2,10 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
 import { Service } from '../../shared/modals/services.modal';
 import { ServiceBarComponent } from "../../shared/components/service-bar/service-bar.component";
+import { HeadingComponent } from "../../shared/components/heading/heading.component";
 
 @Component({
   selector: 'app-services',
-  imports: [ServiceBarComponent],
+  imports: [ServiceBarComponent, HeadingComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss',
 })

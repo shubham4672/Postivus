@@ -1,0 +1,27 @@
+@use "typography";
+
+.key-info {
+  width: 286px;
+  p {
+    @include typography.font-smallest;
+    margin-bottom: 20px;
+    position: relative;
+  }
+}
+
+.learn-more {
+  width: fit-content;
+  color: var(--secondary-green);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  svg {
+    width: 41px;
+    height: 41px;
+    transform: rotate(-45deg);
+    path {
+
+    fill: var(--secondary-green);
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@use "typography";
+
+section {
+  margin-bottom: 140px;
+}
+
+.proposal-bg {
+  border-radius: 45px;
+  background-color: var(--tertiary-grey);
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 60px;
+}
+
+.proposal-left {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 500px;
+  h4 {
+    @include typography.font-small;
+  }
+  p {
+    @include typography.font-smaller;
+  }
+}
+
+.proposal-right img {
+  position: absolute;
+  top: -22px;
+  right: 135px;
+  height: 394.27px;
+}

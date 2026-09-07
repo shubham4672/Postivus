@@ -1,35 +1,10 @@
-@use "typography";
-
 .services {
   margin-top: 140px;
   margin-bottom: 100px;
 }
 
-.service-bar {
-  display: flex;
-  align-items: start;
-  gap: 40px;
-  margin-bottom: 80px;
-
-  .service-heading {
-    background-color: var(--secondary-green);
-    width: 178px;
-    height: 51px;
-    border-radius: 7px;
-    h3 {
-      @include typography.font-regular;
-      text-align: center;
-    }
-  }
-
-  p {
-    width: 580px;
-    @include typography.font-smallest;
-  }
-}
-
 .service-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }

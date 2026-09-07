@@ -1,0 +1,26 @@
+section {
+  margin-bottom: 140px;
+}
+
+.key-performances {
+  display: flex;
+  gap: 128px;
+  padding: 70px 60px;
+  background-color: var(--primary-black);
+  color: var(--tertiary-grey);
+  border-radius: 45px;
+
+  > *:nth-last-child(-n + 2) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -64px; // half of the 128px gap
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: var(--tertiary-grey);
+    }
+  }
+}
