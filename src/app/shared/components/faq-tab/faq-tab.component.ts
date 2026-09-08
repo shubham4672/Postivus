@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { FAQ } from '../../modals/faq.modal';
 
 @Component({
@@ -8,6 +8,11 @@ import { FAQ } from '../../modals/faq.modal';
   styleUrl: './faq-tab.component.scss',
 })
 export class FaqTabComponent {
-  faq = input<FAQ>();
+  faq = input.required<FAQ>();
   isActive = input<Boolean>();
+  accordianEvent = output<string>();
+
+  handleAccordian(id: string) {
+    this.accordianEvent.emit(id);
+  }
 }

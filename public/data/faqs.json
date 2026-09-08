@@ -2,31 +2,37 @@
   {
     "id": "01",
     "heading": "Consultation",
-    "description": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+    "description": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.",
+    "isActive": true
   },
   {
     "id": "02",
     "heading": "Research and Strategy Development",
-    "description": "We conduct in-depth research into your market, competitors, audience, and industry trends to develop a clear and effective strategy tailored to your business."
+    "description": "We conduct in-depth research into your market, competitors, audience, and industry trends to develop a clear and effective strategy tailored to your business.",
+    "isActive": false
   },
   {
     "id": "03",
     "heading": "Implementation",
-    "description": "Once the strategy is approved, we put it into action by executing the planned campaigns, content, and marketing initiatives across the appropriate channels."
+    "description": "Once the strategy is approved, we put it into action by executing the planned campaigns, content, and marketing initiatives across the appropriate channels.",
+    "isActive": false
   },
   {
     "id": "04",
     "heading": "Monitoring and Optimization",
-    "description": "We continuously monitor campaign performance and make data-driven adjustments to improve results, efficiency, and overall marketing performance."
+    "description": "We continuously monitor campaign performance and make data-driven adjustments to improve results, efficiency, and overall marketing performance.",
+    "isActive": false
   },
   {
     "id": "05",
     "heading": "Reporting and Communication",
-    "description": "You will receive clear and regular updates on performance, progress, and key insights, keeping you informed throughout the entire process."
+    "description": "You will receive clear and regular updates on performance, progress, and key insights, keeping you informed throughout the entire process.",
+    "isActive": false
   },
   {
     "id": "06",
     "heading": "Continual Improvement",
-    "description": "Marketing is an ongoing process, so we continually analyze results, identify new opportunities, and refine our approach to support long-term growth."
+    "description": "Marketing is an ongoing process, so we continually analyze results, identify new opportunities, and refine our approach to support long-term growth.",
+    "isActive": false
   }
 ]

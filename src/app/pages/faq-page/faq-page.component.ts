@@ -14,6 +14,13 @@ export class FaqPageComponent implements OnInit {
   faqs: FAQ[] = [];
   private http = inject(HttpClient);
 
+  handleAccordianEvents(id: string) {
+    this.faqs.map((faq) => {
+      return {...faq, isActive: faq.id === String(id) ? !faq.isActive : false}
+    })
+    console.log(id);
+  }
+
   ngOnInit(): void {
     this.http.get<FAQ[]>('/data/faqs.json').subscribe((data) => {
       this.faqs = data;
