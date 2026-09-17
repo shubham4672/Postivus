@@ -1,0 +1,14 @@
+section {
+    margin-bottom: 140px;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.team-btn {
+    margin-top: 40px;
+    float: right;
+}

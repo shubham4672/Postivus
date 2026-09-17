@@ -1,5 +1,6 @@
 export interface FAQ {
     id: string,
     heading: string,
-    description: string
+    description: string,
+    isActive: boolean,
 }
