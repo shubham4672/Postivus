@@ -1,3 +1,43 @@
+@use "typography";
 .container {
-    margin-bottom: 140px;
+  margin-bottom: 140px;
+}
+
+.testimonials-block {
+  width: -webkit-fill-available;
+  background: var(--primary-black);
+  height: 625px;
+  border-radius: 45px;
+  overflow: hidden;
+
+  .swiper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    min-height: 473px;
+    color: var(--text-white);
+    @include typography.font-smallest;
+
+    .swiper-slide {
+        width: 606px;
+        border: 1px solid var(--secondary-green);
+        border-radius: 45px;
+        padding: 52px;
+    }
+
+    .designation .reviewer {
+      @include typography.font-smaller;
+      color: var(--secondary-green);
+      display: block;
+    }
+  }
+
+  .controls {
+    display: flex;
+  }
 }

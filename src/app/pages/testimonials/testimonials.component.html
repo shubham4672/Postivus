@@ -1,5 +1,26 @@
 <section>
-    <div class="container">
-        <app-heading heading="Testimonials" description="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services" />
+  <div class="container">
+    <app-heading
+      heading="Testimonials"
+      description="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"
+    />
+    <div class="testimonials-block">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          @for (review of reviews; track review.id) {
+            <div class="swiper-slide">
+              <p>"{{ review.testimonial }}"</p>
+              <div class="designation">
+                <strong class="reviewer">{{ review.name }}</strong>
+                <strong>{{ review.designation }}</strong>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+  </div>
 </section>
