@@ -6,12 +6,18 @@
   }
 }
 
-.accordian {
+button.accordian {
+  width: -webkit-fill-available;
   background-color: var(--tertiary-grey);
   border: 1px solid black;
   border-radius: 45px;
   padding: 41px 60px;
   box-shadow: 0 10px 0px -5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    border-radius 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .accordian-heading {
@@ -38,6 +44,7 @@
     border-radius: 45px;
     border: 1px solid var(--primary-black);
     cursor: pointer;
+    transition: 0.3s ease;
   }
   svg {
     width: 25.08px;
@@ -48,14 +55,15 @@
 .faq-description {
   @include typography.font-smallest;
   width: 98%;
+  text-align: left;
 }
 
-.separator  {
-    width: 99%;
-    height: 1px;
-    background-color: var(--primary-black);
-    margin: 30px 0;
-  }
+.separator {
+  width: 99%;
+  height: 1px;
+  background-color: var(--primary-black);
+  margin: 30px 0;
+}
 
 .active {
   background-color: var(--secondary-green);
