@@ -4,5 +4,31 @@
       heading="Contact Us"
       description="Connect with Us: Let's Discuss Your Digital Marketing Needs"
     />
+    <div class="contact-us">
+      <div class="form-left">
+        <div class="radio-buttons">
+          <form>
+            <input type="radio" name="option" id="feedback" checked />
+            <label name="feedback" id="feedback">Say Hello</label>
+            <input type="radio" name="option" id="quote" />
+            <label name="quote" id="quote">Get a Quote</label>
+          </form>
+        </div>
+        <form>
+          <div class="form-inputs">
+            <label for="name">Name</label>
+            <input type="text" class="name" placeholder="Name" />
+            <label for="email">Email*</label>
+            <input type="text" class="email" placeholder="Email" />
+            <label for="message">Message*</label>
+            <textarea name="message" placeholder="Message" rows="10"></textarea>
+          </div>
+          <app-button content="Send Message" mode="dark"></app-button>
+        </form>
+      </div>
+      <div class="image-right">
+        <img src="/images/IllustrationCU.png" alt="IllustrationCU" />
+      </div>
+    </div>
   </div>
 </section>

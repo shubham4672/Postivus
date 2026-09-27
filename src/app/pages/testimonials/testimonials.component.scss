@@ -9,6 +9,7 @@
   height: 625px;
   border-radius: 45px;
   overflow: hidden;
+  position: relative;
 
   .swiper {
     display: flex;
@@ -24,10 +25,14 @@
     @include typography.font-smallest;
 
     .swiper-slide {
-        width: 606px;
-        border: 1px solid var(--secondary-green);
-        border-radius: 45px;
-        padding: 52px;
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      border: 1px solid var(--secondary-green);
+      border-radius: 45px;
+      padding: 52px;
     }
 
     .designation .reviewer {
@@ -39,5 +44,19 @@
 
   .controls {
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 45px;
+    button {
+      background-color: var(--primary-black);
+      border: none;
+      color: white;
+      svg {
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+      }
+    }
   }
 }

@@ -1,8 +1,8 @@
-import { AfterViewInit, Component, inject, OnInit } from '@angular/core';
-import { HeadingComponent } from '../../shared/components/heading/heading.component';
 import Swiper from 'swiper';
-import { Review } from '../../shared/modals/Review.modal';
 import { HttpClient } from '@angular/common/http';
+import { Review } from '../../shared/modals/Review.modal';
+import { HeadingComponent } from '../../shared/components/heading/heading.component';
+import { AfterViewInit, Component, inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-testimonials',
@@ -23,8 +23,9 @@ export class TestimonialsComponent implements OnInit, AfterViewInit {
     const swiper = new Swiper('.swiper', {
       slidesPerView: 2.5,
       spaceBetween: 50,
-      speed: 500,
-      loop: true,
+      speed: 1000,
+      loop: false,
+      rewind: false,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -35,6 +36,7 @@ export class TestimonialsComponent implements OnInit, AfterViewInit {
       },
       autoplay: {
         delay: 1000,
+        disableOnInteraction: true,
       },
     });
   }
