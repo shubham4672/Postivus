@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ButtonComponent } from "../../../shared/components/button/button.component";
+import { Component, input } from '@angular/core';
+import { ButtonComponent } from "../button/button.component";
 
 @Component({
   selector: 'app-navbar',
@@ -8,5 +8,5 @@ import { ButtonComponent } from "../../../shared/components/button/button.compon
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-
+  mainNav = input<boolean>();
 }

@@ -17,4 +17,7 @@ button {
       background: var(--tertiary-grey);
     }
   }
+  &.green {
+    background: var(--secondary-green);
+  }
 }
