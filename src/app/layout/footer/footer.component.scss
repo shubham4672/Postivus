@@ -1,7 +1,66 @@
-.container {
-    background: var(--primary-black);
-    color: var(--text-white);
-    padding: 55px 60px 50px 60px;
-    border-radius: 45px 45px 0 0;
+@use "typography";
 
+.container {
+  color: var(--text-white);
+  background: var(--primary-black);
+  padding: 55px 60px 50px 60px;
+  border-radius: 45px 45px 0 0;
+  a {
+    text-decoration: none;
+    color: var(--text-white);
+  }
+  .contact-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 66px;
+
+    .contact-left {
+      @include typography.font-smallest;
+
+      address {
+        display: inline;
+      }
+      p {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    .contact-left > span {
+      display: inline-block;
+      background-color: var(--secondary-green);
+      color: var(--text-black);
+      @include typography.font-smaller;
+      padding: 0 7px;
+      border-radius: 7px;
+      margin-bottom: 27px;
+    }
+
+    .contact-right {
+      background-color: var(--bg-grey-fill);
+      border-radius: 14px;
+      display: flex;
+      gap: 20px;
+      padding: 40px 58px;
+    }
+  }
+
+  .break-through {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: var(--text-white);
+    margin: 50px 0;
+  }
+
+  .footer-copyright {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    @include typography.font-smaller;
+    a {
+      text-decoration: underline;
+    }
+  }
 }
