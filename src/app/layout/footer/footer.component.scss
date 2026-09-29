@@ -40,8 +40,24 @@
       background-color: var(--bg-grey-fill);
       border-radius: 14px;
       display: flex;
+      align-items: center;
       gap: 20px;
       padding: 40px 58px;
+      
+      input {
+        height: 67px;
+        width: 285px;
+        padding: 22px 35px;
+        background-color: transparent;
+        border: 1px solid var(--text-white);
+        color: var(--text-white);
+        border-radius: 14px;
+        @include typography.font-smallest;
+      }
+      ::placeholder {
+        @include typography.font-smallest;
+        color: var(--text-white);
+      }
     }
   }
 

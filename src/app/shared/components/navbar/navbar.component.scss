@@ -1,9 +1,10 @@
-@use 'typography';
+@use "typography";
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .nav-left {
@@ -19,22 +20,48 @@ nav {
     height: 36px;
   }
 
+  img.invert-logo {
+    filter: invert(100%);
+  }
+
   h1 {
     @include typography.font-regular;
   }
 }
 
-.nav-right ul {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  list-style: none;
+.nav-right.navigate {
+    margin-left: auto;
+  }
+
+.nav-right {
+  display: flex;  
+  .nav-decorate {
+    text-decoration: underline 1px;
+    text-underline-offset: 3px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+  }
 
   li {
     @include typography.font-smaller;
     cursor: pointer;
     &:hover {
       text-decoration: underline;
-    }    
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+.nav-right-icons {
+  display: flex;
+  gap: 20px;
+  svg {
+    width: 30px;
+    cursor: pointer;
   }
 }
