@@ -90,3 +90,31 @@
     padding: 30px;
   }
 }
+
+@media (max-width: 768px) {
+  :host {
+    &.bggreen .service-card {
+      padding: 0 20px;
+    }
+    &.bggrey .service-card {
+      padding: 0 20px;
+    }
+    &.bgwhite .service-card {
+      padding: 0 20px;
+    }
+  }
+
+  .service-left {
+    gap: 39px;
+  }
+
+  .service-icon {
+    @include typography.font-smaller;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card {
+    justify-content: space-around;
+  }
+}

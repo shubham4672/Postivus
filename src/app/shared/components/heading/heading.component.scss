@@ -21,3 +21,26 @@
     @include typography.font-smallest;
   }
 }
+
+@media (max-width: 786px) {
+  .heading-bar {
+    gap: 30px;
+  }
+  .heading-bar .heading {
+    padding: 0 6px;
+    h3 {
+      @include typography.font-small;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .heading-bar {
+    gap: 15px;
+  }
+  .heading-bar .heading {
+    h3 {
+      @include typography.font-regular;
+    }
+  }
+}

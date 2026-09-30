@@ -25,3 +25,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .key-info {
+    width: -webkit-fill-available;
+    p {
+      @include typography.font-smaller;
+    }
+  }
+  .learn-more {
+    @include typography.font-smaller;
+  }
+}

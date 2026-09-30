@@ -12,3 +12,15 @@ section {
     margin-top: 40px;
     float: right;
 }
+
+@media (max-width: 576px) {
+  .team-members {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 457px) {
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+}

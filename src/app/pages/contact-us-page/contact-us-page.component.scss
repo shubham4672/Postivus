@@ -72,3 +72,25 @@
     right: 0px;
   }
 }
+
+@media (max-width: 576px) {
+  .contact-us {
+    padding: 60px 0px 67px 29px;
+  }
+}
+
+@media (max-width: 476px) {
+  .contact-us {
+    padding: 60px 29px 67px 29px;
+  }
+  .form-left {
+    width: 100%;
+
+    form {
+      width: 100%;
+    }
+  }
+  .image-right {
+    display: none;
+  }
+}

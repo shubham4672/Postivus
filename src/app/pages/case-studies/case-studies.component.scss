@@ -36,3 +36,9 @@ section {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .key-performances {
+    flex-direction: column; 
+  }
+}

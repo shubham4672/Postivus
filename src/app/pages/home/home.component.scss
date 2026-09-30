@@ -9,8 +9,6 @@
 
 .home-left {
   padding: 0px;
-  width: 531px;
-  height: 481px;
 
   h2,
   p {
@@ -45,5 +43,15 @@
     grid-template-columns: repeat(3, 1fr);
     margin-top: 120px;
     gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+
+  .companies {
+    grid-template-columns: 1fr 1fr;
   }
 }
