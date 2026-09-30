@@ -4,7 +4,7 @@
   --secondary-green: #b9ff66;
   --primary-black: #191a23;
   --tertiary-grey: #f3f3f3;
-  --bg-grey-fill: #292A32;
+  --bg-grey-fill: #292a32;
   --text-white: #ffffff;
   --text-black: #000000;
 }
@@ -25,4 +25,18 @@ body {
   margin: 0 auto;
   width: 1240px;
   padding: 0 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 1200px;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 1106px;
+    padding: 0 50px;
+  }
 }

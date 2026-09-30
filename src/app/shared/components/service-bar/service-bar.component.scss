@@ -83,3 +83,10 @@
     transform: rotate(-45deg);
   }
 }
+
+    
+@media (max-width: 1024px) {
+  .service-card {
+    padding: 30px;
+  }
+}

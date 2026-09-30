@@ -24,3 +24,15 @@ section {
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .key-performances {
+    gap: 79px;
+    padding: 57px 40px;
+    > *:nth-last-child(-n + 2) {
+      &::before {
+        left: -50px;
+      }
+    }
+  }
+}

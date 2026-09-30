@@ -65,3 +65,33 @@ nav {
     cursor: pointer;
   }
 }
+
+.hamburger {
+  display: none;
+  font-size: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-right ul li:nth-child(-n + 5) {
+    display: none;
+  }
+
+  .nav-right .nav-decorate li:nth-child(-n + 5) {
+    display: block;
+  }
+
+  .nav-right-icons {
+    display: none;
+  }
+
+  .nav-right ul li:last-child {
+    margin-right: 50px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
