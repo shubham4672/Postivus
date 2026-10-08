@@ -67,11 +67,26 @@ nav {
 }
 
 .hamburger {
-  display: none;
-  font-size: 32px;
-  background: none;
+  display: flex;
+  flex-direction: column;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
+  // z-index: 10;
+}
+
+.hamburger span {
+  display: inline-block;
+  width: 32px;
+  height: 0.25rem;
+  background-color: var(--primary-black);
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  transform-origin: 1px;
 }
 
 @media (max-width: 768px) {

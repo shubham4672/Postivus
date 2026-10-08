@@ -40,7 +40,11 @@
   </div>
   @if (mainNav()) {
     <div class="nav-hamburger">
-      <button class="hamburger">☰</button>
+      <button class="hamburger" (click)="navbarToggle()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   }
 </nav>

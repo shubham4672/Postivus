@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
 
 @Component({
@@ -8,5 +8,9 @@ import { NavbarComponent } from "../../shared/components/navbar/navbar.component
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  mainNav = input<boolean>();
+  showHamburger = signal<boolean>(false);
+  toogleHamburger(displayHamburger: boolean) {
+    this.showHamburger.set(displayHamburger);
+  }
 }

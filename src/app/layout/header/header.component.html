@@ -1,5 +1,16 @@
 <section>
-    <div class="container">
-        <app-navbar [mainNav]="true" />
-    </div>
+  <div class="container">
+    @if (showHamburger()) {
+      <div class="nav-options">
+        <ul [class.nav-decorate]="!mainNav()">
+          <li>About us</li>
+          <li>Services</li>
+          <li>Use Cases</li>
+          <li>Pricing</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+    }
+    <app-navbar [mainNav]="true" (toggleHamburger)="toogleHamburger($event)" />
+  </div>
 </section>

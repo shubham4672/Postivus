@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output, signal } from '@angular/core';
 import { ButtonComponent } from "../button/button.component";
 
 @Component({
@@ -9,4 +9,11 @@ import { ButtonComponent } from "../button/button.component";
 })
 export class NavbarComponent {
   mainNav = input<boolean>();
+  toggleHamburger = output<boolean>();
+  protected isOpen = signal<boolean>(false);
+
+  navbarToggle() {
+    this.isOpen.update(prev => !prev);
+    this.toggleHamburger.emit(this.isOpen());
+  }
 }

@@ -1,5 +1,9 @@
 @use "typography";
 
+.nav-options {
+  display: none;
+}
+
 .home {
   display: flex;
   justify-content: space-between;
@@ -43,6 +47,19 @@
     grid-template-columns: repeat(3, 1fr);
     margin-top: 120px;
     gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    position: relative;
+    opacity: 0.4;
+  }
+
+  .nav-options {
+    display: block;
+    right: 0;
+    position: absolute;
   }
 }
 
