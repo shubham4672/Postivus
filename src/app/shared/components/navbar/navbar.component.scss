@@ -110,6 +110,9 @@ nav {
 
   .nav-hamburger {
     display: block;
-    z-index: 10;
+  }
+
+  button.open span {
+    background-color: var(--text-white);
   }
 }

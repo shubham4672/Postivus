@@ -11,6 +11,11 @@ import { ButtonComponent } from '../../shared/components/button/button.component
 export class HeaderComponent {
   mainNav = input<boolean>();
   showHamburger = signal<boolean>(false);
+
+  closeNavigation() {
+    this.showHamburger.set(false);
+  }
+
   toogleHamburger(displayHamburger: boolean) {
     this.showHamburger.set(displayHamburger);
   }

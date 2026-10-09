@@ -1,3 +1,5 @@
+@use "typography";
+
 section {
   margin-top: 60px;
 
@@ -5,11 +7,29 @@ section {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 644px;
     height: 100%;
     background-color: var(--primary-black);
     color: var(--text-white);
     z-index: 5;
+    transform: translateX(100%);
+
+    &.opening {
+      animation: slideIn 0.5s ease-out forwards;
+    }
+    &.closing {
+      animation: slideOut 0.5s ease-in forwards;
+    }
+
+    .hamburger-close {
+      position: absolute;
+      top: 60px;
+      right: 120px;
+      background: transparent;
+      color: var(--text-white);
+      border: none;
+      cursor: pointer;
+    }
 
     ul {
       list-style: none;
@@ -20,8 +40,34 @@ section {
       padding: 150px 75px;
     }
 
-    ul li:nth-last-child(1) {
-        background-color: transparent;
+    ul li {
+      @include typography.font-smaller;
     }
+
+    ul li:nth-last-child(1) {
+      background-color: transparent;
+    }
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }
