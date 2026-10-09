@@ -40,7 +40,11 @@
   </div>
   @if (mainNav()) {
     <div class="nav-hamburger">
-      <button class="hamburger" (click)="navbarToggle()">
+      <button
+        class="hamburger"
+        [class.open]="isOpen()"
+        (click)="navbarToggle()"
+      >
         <span></span>
         <span></span>
         <span></span>

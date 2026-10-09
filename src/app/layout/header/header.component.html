@@ -2,12 +2,13 @@
   <div class="container">
     @if (showHamburger()) {
       <div class="nav-options">
-        <ul [class.nav-decorate]="!mainNav()">
+        <ul>
           <li>About us</li>
           <li>Services</li>
           <li>Use Cases</li>
           <li>Pricing</li>
           <li>Blog</li>
+          <li><app-button content="Request a quote" mode="light" /></li>
         </ul>
       </div>
     }

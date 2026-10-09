@@ -1,9 +1,10 @@
 import { Component, input, signal } from '@angular/core';
 import { NavbarComponent } from "../../shared/components/navbar/navbar.component";
+import { ButtonComponent } from '../../shared/components/button/button.component';
 
 @Component({
   selector: 'app-header',
-  imports: [NavbarComponent],
+  imports: [NavbarComponent, ButtonComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
