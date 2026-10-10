@@ -29,11 +29,30 @@
 @media (max-width: 768px) {
   .key-info {
     width: -webkit-fill-available;
+
     p {
-      @include typography.font-smaller;
+      @include typography.font-sm-smallest;
     }
   }
   .learn-more {
-    @include typography.font-smaller;
+    @include typography.font-sm-smallest;
+
+    svg {
+      width: 51px;
+      height: 51px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .key-info {
+    p {
+      @include typography.font-md-smaller;
+    }
+
+    svg {
+      width: 55px;
+      height: 55px;
+    }
   }
 }

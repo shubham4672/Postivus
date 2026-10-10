@@ -116,3 +116,11 @@ nav {
     background-color: var(--text-white);
   }
 }
+
+@media (max-width: 576px) {
+  .nav-left {
+    h1 {
+      @include typography.font-sm-regular;
+    }
+  }
+}

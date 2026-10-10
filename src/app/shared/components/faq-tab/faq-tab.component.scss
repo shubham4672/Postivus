@@ -68,3 +68,18 @@ button.accordian {
 .active {
   background-color: var(--secondary-green);
 }
+
+@media (max-width: 576px) {
+  .accordian-heading {
+    .heading-title {
+      @include typography.font-md-small;
+      span {
+        @include typography.font-sm-large;
+      }
+    }
+  }
+
+  .faq-description {
+    @include typography.font-md-smaller;
+  }
+}

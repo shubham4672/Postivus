@@ -1,4 +1,4 @@
-@use 'typography';
+@use "typography";
 
 :host {
   &:hover {
@@ -84,7 +84,6 @@
   }
 }
 
-    
 @media (max-width: 1024px) {
   .service-card {
     padding: 30px;
@@ -116,5 +115,22 @@
 @media (max-width: 576px) {
   .service-card {
     justify-content: space-around;
+
+    .service-heading span {
+      @include typography.font-sm-small;
+    }
+
+    .service-icon {
+      @include typography.font-sm-smaller;
+
+      svg {
+        width: 51px;
+        height: 51px;
+      }
+    }
+  }
+
+  .image img {
+    width: 280px;
   }
 }

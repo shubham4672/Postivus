@@ -5,3 +5,9 @@
 img {
     filter: grayscale(100%);
 }
+
+@media (max-width: 576px) {
+    img {
+        width: 170px;
+    }
+}

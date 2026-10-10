@@ -21,3 +21,9 @@ button {
     background: var(--secondary-green);
   }
 }
+
+@media (max-width: 576px) {
+  button {
+    @include typography.font-sm-smaller;
+  }
+}

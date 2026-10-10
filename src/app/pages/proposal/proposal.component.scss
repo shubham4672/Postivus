@@ -32,3 +32,15 @@ section {
   right: 135px;
   height: 394.27px;
 }
+
+@media (max-width: 768px) {
+  .proposal-right img {
+    right: 60px
+  }
+}
+
+// @media (max-width: 576px) {
+//   .proposal-right img {
+//     right: 60px;
+//   }
+// }

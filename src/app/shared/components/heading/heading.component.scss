@@ -37,6 +37,10 @@
 @media (max-width: 576px) {
   .heading-bar {
     gap: 15px;
+
+    p {
+      @include typography.font-sm-smaller;
+    }
   }
   .heading-bar .heading {
     h3 {

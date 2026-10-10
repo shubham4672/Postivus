@@ -1,3 +1,5 @@
+@use 'typography';
+
 .container {
   margin-bottom: 140px;
 }
@@ -76,6 +78,10 @@
 @media (max-width: 576px) {
   .contact-us {
     padding: 60px 0px 67px 29px;
+  }
+
+  form input, label, textarea {
+    @include typography.font-sm-smaller;
   }
 }
 

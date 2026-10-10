@@ -40,6 +40,19 @@ p {
   .card {
     padding: auto;
   }
+
+  .card-bottom {
+    @include typography.font-sm-smaller;
+  }
+}
+
+@media (max-width: 786px) {
+  .social-icon {
+    svg {
+      width: 44px;
+      height: 44px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -49,8 +62,15 @@ p {
 
   .social-icon {
     svg {
-      width: 44px;
-      height: 44px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .card-bottom  {
+    @include typography.font-md-smaller;
+    p {
+      @include typography.font-sm-smaller;
     }
   }
 }

@@ -3,8 +3,23 @@
   font-weight: 400;
 }
 
+@mixin font-sm-smallest {
+  font-size: 22px;
+  font-weight: 400;
+}
+
 @mixin font-smaller {
   font-size: 20px;
+  font-weight: 400;
+}
+
+@mixin font-sm-smaller {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@mixin font-md-smaller {
+  font-size: 26px;
   font-weight: 400;
 }
 
@@ -13,8 +28,23 @@
   font-weight: 400;
 }
 
+@mixin font-sm-small {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+@mixin font-md-small {
+  font-size: 36px;
+  font-weight: 400;
+}
+
 @mixin font-regular {
   font-size: 40px;
+  font-weight: 400;
+}
+
+@mixin font-sm-regular {
+  font-size: 44px;
   font-weight: 400;
 }
 
@@ -23,7 +53,17 @@
   font-weight: 600;
 }
 
+@mixin font-sm-medium {
+  font-size: 44px;
+  font-weight: 600;
+}
+
 @mixin font-large {
   font-size: 60px;
+  font-weight: 500;
+}
+
+@mixin font-sm-large {
+  font-size: 62px;
   font-weight: 500;
 }

@@ -16,8 +16,7 @@
   }
 
   h2 {
-    font-size: 60px;
-    font-weight: 500;
+    @include typography.font-large
   }
 
   p {
@@ -61,9 +60,19 @@
 @media (max-width: 576px) {
   .home {
     flex-direction: column-reverse;
+
+    .home-left {
+      h2 {
+        @include typography.font-sm-large;
+      }
+      p {
+        @include typography.font-md-smaller;
+      }
+    }
   }
 
   .companies {
+    margin-top: 60px;
     grid-template-columns: 1fr 1fr;
   }
 }

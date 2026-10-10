@@ -23,7 +23,7 @@ section {
 
     .hamburger-close {
       position: absolute;
-      top: 60px;
+      top: 75px;
       right: 120px;
       background: transparent;
       color: var(--text-white);
@@ -41,7 +41,12 @@ section {
     }
 
     ul li {
-      @include typography.font-smaller;
+      @include typography.font-sm-smaller;
+    }
+
+    ul li a {
+      color: white;
+      text-decoration: none;
     }
 
     ul li:nth-last-child(1) {
@@ -69,5 +74,19 @@ section {
   to {
     transform: translateX(100%);
     opacity: 0;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .nav-options {
+    ul li {
+      @include typography.font-sm-small;
+    }
+  }
+
+  button svg {
+    width: 36px;
+    height: 36px;
   }
 }
