@@ -13,7 +13,6 @@
 
   .swiper {
     display: flex;
-    justify-content: center;
 
     .controls {
       display: flex;
@@ -54,17 +53,15 @@
   .swiper-wrapper {
     display: flex;
     align-items: center;
-    gap: 50px;
-    min-height: 473px;
+    min-height: 542px;
     color: var(--text-white);
     @include typography.font-smallest;
 
     .swiper-slide {
-      width: auto;
-      height: auto;
+      min-height: 420px;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      justify-content: space-around;
       border: 1px solid var(--secondary-green);
       border-radius: 45px;
       padding: 52px;

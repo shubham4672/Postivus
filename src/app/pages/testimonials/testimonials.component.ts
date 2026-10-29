@@ -22,6 +22,7 @@ export class TestimonialsComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     const swiper = new Swiper('.swiper', {
       slidesPerView: 2.5,
+      centeredSlides: true,
       spaceBetween: 50,
       speed: 1000,
       loop: false,
